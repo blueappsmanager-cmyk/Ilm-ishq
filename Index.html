@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Privacy Policy — ilm ishq Novel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #1a0f0a;
+            color: #F5E6D3;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #3E2723 0%, #2C1810 100%);
+            padding: 40px 20px 30px;
+            text-align: center;
+            border-bottom: 3px solid #B8860B;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(184,134,11,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .header-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .header h1 {
+            color: #DAA520;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-shadow: 0 0 20px rgba(218, 165, 32, 0.3);
+        }
+
+        .header .subtitle {
+            color: #C8A882;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .header .package {
+            color: #8B7355;
+            font-size: 0.8rem;
+            font-family: 'Courier New', monospace;
+            background: rgba(0,0,0,0.3);
+            padding: 4px 12px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .last-updated {
+            background: rgba(184, 134, 11, 0.15);
+            border: 1px solid rgba(184, 134, 11, 0.3);
+            color: #DAA520;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* ==================== */
+        /* APP INFO CARD */
+        /* ==================== */
+        .app-info-card {
+            background: linear-gradient(145deg, #2C1810, #3E2723);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        .app-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.15);
+        }
+
+        .app-info-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .app-info-item:first-child {
+            padding-top: 0;
+        }
+
+        .info-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+            width: 40px;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-label {
+            color: #8B7355;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            color: #F5E6D3;
+            font-size: 1.05rem;
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .info-value.email {
+            color: #DAA520;
+        }
+
+        /* Section Cards */
+        .section {
+            background: linear-gradient(145deg, #2C1810, #3E2723);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            border-color: rgba(184, 134, 11, 0.4);
+        }
+
+        .section-title {
+            color: #DAA520;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title .icon {
+            font-size: 1.4rem;
+        }
+
+        .section p {
+            color: #C8A882;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section strong {
+            color: #F5E6D3;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: rgba(184, 134, 11, 0.1);
+            border-left: 4px solid #B8860B;
+            padding: 18px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 18px 0;
+        }
+
+        .highlight-box p {
+            color: #F5E6D3;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .feature-list li {
+            color: #C8A882;
+            padding: 10px 0;
+            padding-left: 32px;
+            position: relative;
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.1);
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #B8860B;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Card */
+        .contact-card {
+            background: linear-gradient(135deg, #3E2723, #5D3A1A);
+            border: 2px solid #B8860B;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-card h3 {
+            color: #DAA520;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            color: #C8A882;
+            font-size: 0.95rem;
+        }
+
+        .contact-item .label {
+            color: #B8860B;
+            font-weight: 600;
+        }
+
+        .contact-item .value {
+            color: #FFD700;
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .email-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #B8860B;
+            color: #2C1810;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+
+        .email-btn:hover {
+            background: #DAA520;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #8B7355;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(184, 134, 11, 0.2);
+            margin-top: 20px;
+        }
+
+        .footer .heart {
+            color: #8B0000;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.4rem;
+            }
+
+            .section, .app-info-card {
+                padding: 20px;
+            }
+
+            .contact-card {
+                padding: 20px;
+            }
+
+            .info-value {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <span class="header-icon">📚</span>
+        <h1>ilm ishq Novel</h1>
+        <p class="subtitle">by Juliya Rajpoot</p>
+        <p class="package">com.bluenovelilm.mywebapp</p>
+        <div class="last-updated">
+            <span>📅</span>
+            <span>Last Updated: 6 jun 2026</span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- ==================== -->
+        <!-- APP INFO CARD -->
+        <!-- ==================== -->
+        <div class="app-info-card">
+            <div class="app-info-item">
+                <div class="info-icon">📱</div>
+                <div class="info-content">
+                    <div class="info-label">App Name</div>
+                    <div class="info-value">ilm ishq Novel</div>
+                </div>
+            </div>
+
+            <div class="app-info-item">
+                <div class="info-icon">📦</div>
+                <div class="info-content">
+                    <div class="info-label">Package Name</div>
+                    <div class="info-value">com.bluenovelilm.mywebapp</div>
+                </div>
+            </div>
+
+            <div class="app-info-item">
+                <div class="info-icon">👨‍💻</div>
+                <div class="info-content">
+                    <div class="info-label">Developer</div>
+                    <div class="info-value">BlueApps</div>
+                </div>
+            </div>
+
+            <div class="app-info-item">
+                <div class="info-icon">📧</div>
+                <div class="info-content">
+                    <div class="info-label">Contact</div>
+                    <div class="info-value email">blueappsmanager@gmail.com</div>
+                </div>
+            </div>
+
+            <div class="app-info-item">
+                <div class="info-icon">📅</div>
+                <div class="info-content">
+                    <div class="info-label">Last Updated</div>
+                    <div class="info-value">6 jun 2026</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">🔒</span>
+                Privacy Policy
+            </h2>
+            <p><strong>BlueApps</strong> ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how our app <strong>ilm ishq Novel</strong> handles your information.</p>
+            <p>By using this app, you agree to the terms outlined in this policy. If you have any questions, please contact us at <strong style="color: #FFD700;">blueappsmanager@gmail.com</strong>.</p>
+        </div>
+
+        <!-- App Features -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">📲</span>
+                App Features
+            </h2>
+            <p><strong>ilm ishq Novel</strong> is a free digital reading app with the following features:</p>
+
+            <ul class="feature-list">
+                <li>Read "ilm ishq" novel by Juliya Rajpoot</li>
+                <li>Bookmark pages for quick access</li>
+                <li>Jump to any page instantly</li>
+                <li>Resume reading from where you left off</li>
+                <li>Zoom mode for comfortable reading</li>
+                <li><strong>Share Novel:</strong> Share this app with friends via social media</li>
+                <li><strong>More Novels:</strong> Discover other novels by BlueApps</li>
+            </ul>
+
+            <p>All features are provided free of charge. The <strong>Share</strong> and <strong>More Novels</strong> buttons use your device's native sharing capabilities and do not collect any data.</p>
+        </div>
+
+        <!-- No Data Collection -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">🛡️</span>
+                No Data Collection
+            </h2>
+            <p>We believe in complete privacy. <strong>ilm ishq Novel does not collect, store, or share any personal information.</strong></p>
+
+            <div class="highlight-box">
+                <p>✓ No account creation required<br>
+                ✓ No personal details requested<br>
+                ✓ No data transmitted to our servers<br>
+                ✓ No tracking or analytics</p>
+            </div>
+        </div>
+
+        <!-- Local Storage -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">💾</span>
+                Local Storage Only
+            </h2>
+            <p>All app data is stored <strong>locally on your device</strong> using your browser's localStorage feature. This includes:</p>
+
+            <ul class="feature-list">
+                <li>Your current reading page</li>
+                <li>Bookmarked pages</li>
+                <li>Reading progress</li>
+            </ul>
+
+            <p>This data <strong>never leaves your device</strong> and is not accessible to us or any third party. Clearing your browser data will remove this information.</p>
+        </div>
+
+        <!-- Offline Usage -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">📱</span>
+                Offline Usage
+            </h2>
+            <p><strong>ilm ishq Novel works completely offline.</strong> Once the app is loaded, no internet connection is required to read the novel.</p>
+            <p>The PDF content is bundled within the app and does not require downloading from external sources after initial installation.</p>
+        </div>
+
+        <!-- Permissions -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">🔐</span>
+                App Permissions
+            </h2>
+            <p>This app requires <strong>no special permissions</strong> to function:</p>
+
+            <ul class="feature-list">
+                <li>No camera access</li>
+                <li>No microphone access</li>
+                <li>No location access</li>
+                <li>No contacts access</li>
+                <li>No storage write permission (uses internal browser storage)</li>
+            </ul>
+        </div>
+
+        <!-- Share Feature -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">↗️</span>
+                Share Feature
+            </h2>
+            <p>The <strong>Share Novel</strong> button uses your device's native <strong>Web Share API</strong> to share the app link with friends. This feature:</p>
+
+            <ul class="feature-list">
+                <li>Does not access your contacts list</li>
+                <li>Does not send data to our servers</li>
+                <li>Opens your device's default share menu only</li>
+                <li>Shares only the Play Store developer page link</li>
+            </ul>
+        </div>
+
+        <!-- More Novels Feature -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">📚</span>
+                More Novels Feature
+            </h2>
+            <p>The <strong>More Novels</strong> button redirects you to our <strong>BlueApps Play Store developer page</strong> to discover other novels. This feature:</p>
+
+            <ul class="feature-list">
+                <li>Opens the Google Play Store app or website</li>
+                <li>Does not collect any browsing data</li>
+                <li>Does not track your activity</li>
+                <li>Simply opens an external link to our developer page</li>
+            </ul>
+        </div>
+
+        <!-- Third Party -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">🔗</span>
+                Third-Party Services
+            </h2>
+            <p>This app <strong>does not use</strong> any third-party services that collect user data:</p>
+
+            <ul class="feature-list">
+                <li>No Google Analytics</li>
+                <li>No Facebook SDK</li>
+                <li>No advertising networks</li>
+                <li>No crash reporting tools</li>
+                <li>No external APIs</li>
+            </ul>
+
+            <p>The only external resource loaded is <strong>PDF.js library</strong> from CDNJS for PDF rendering, which does not track users.</p>
+        </div>
+
+        <!-- Children's Privacy -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">👶</span>
+                Children's Privacy
+            </h2>
+            <p>This app does not knowingly collect any information from children under 13. As no data is collected at all, the app is safe for users of all ages.</p>
+        </div>
+
+        <!-- Policy Updates -->
+        <div class="section">
+            <h2 class="section-title">
+                <span class="icon">📝</span>
+                Changes to This Policy
+            </h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this page.</p>
+            <p>We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-card">
+            <h3>📧 Contact Us</h3>
+
+            <div class="contact-item">
+                <span class="label">Developer:</span>
+                <span class="value">BlueApps</span>
+            </div>
+
+            <div class="contact-item">
+                <span class="label">Email:</span>
+                <span class="value">blueappsmanager@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+                <span class="label">App:</span>
+                <span class="value">ilm ishq Novel</span>
+            </div>
+
+            <a href="mailto:blueappsmanager@gmail.com" class="email-btn">
+                <span>✉️</span>
+                <span>Send Email</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Made with <span class="heart">❤</span> by BlueApps</p>
+        <p style="margin-top: 8px;">© 2026 ilm ishq Novel. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
